@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#sidebar {
+  height: 100%;
+  width: 200px;
+  background-color: rgba(200, 200, 200, 0.75);
+  position: fixed;
+  z-index: 2;
+  overflow: auto;
+  text-align: left;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: capitalize;
+  color: rgb(50, 50, 50);
+}
+#sidebar a {
+  color: #1a8fe3;
+  text-decoration: none;
+}
+#sidebar a:hover {
+  color: rgb(0, 250, 0);
+}
+
+/* button within sidebar */
+#sidebar button {
+  height: 8%;
+  width: 100%;
+  top: 0;
+  background-color: rgb(200, 200, 200);
+  border: none;
+}
+/* button that brings up sidebar */
+#sb_button {
+  position: fixed;
+  z-index: 1;
+  height: 7%;
+  width: 7%;
+  background-color: rgba(220, 220, 220);
+  border: 1px solid white;
+}
+#sb_button:hover {
+  background-color: rgb(200, 200, 200);
+}
+.banner img {
+  width: 100%;
+  height: 100vh;
+  filter: brightness(50%);
+}
+.banner {
+  height: 100vh;
+}
+#bannerinfo {
+  color: white;
+  position: absolute;
+  left: 15vw;
+  top: 10vw;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 2em;
+  font-weight: bolder;
+  line-height: 300%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#bannerinfo button {
+  height: 10vh;
+  width: 15vw;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+}
+#bannerinfo button:hover {
+  background-color: rgb(248, 52, 52);
+}
+main img {
+  height: 30vh;
+  transform: scale(1);
+  width: 100%;
+  padding: 5%;
+}
+main h2 {
+  /* titles need moving */
+  color: #1a8fe3;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 2em;
+  position: absolute;
+  text-shadow: 3px 3px white;
+  font-family: fantasy;
+  font-size: 2.5em;
+  letter-spacing: 3px;
+}
+main img:hover {
+  transform: scale(1.1);
+}
+main {
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(
+    top,
+    rgb(158, 158, 158) 0%,
+    rgb(49, 52, 58) 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgb(158, 158, 158) 0%,
+    rgb(49, 52, 58) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgb(158, 158, 158) 0%,
+    rgb(49, 52, 58) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#3f4c6b',GradientType=0 );
+}
+#topgames h2 {
+  left: 40%;
+}
+#topgames img {
+  margin-top: 12%;
+  width: 100%;
+  height: 100%;
+}
+#topgames {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  padding: 5%;
+}
+#divider {
+  position: absolute;
+  background: url(./images/pacman\ divider.JPG);
+  width: 100vw;
+  height: 10vh;
+  background-size: contain;
+}
+#games h2 {
+  left: 35%;
+}
+#games {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10%;
+}
+#games img {
+  margin-top: 45%;
+}
+#game_over {
+  display: block;
+  width: 30vw;
+  height: 40vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer {
+  background-color: black;
+  width: 100vw;
+  height: 20vh;
+  border: 1px solid black;
+  color: white;
+  text-align: center;
+}
+footer p {
+  border-bottom: 1px solid white;
+}
+/*
+login page = same banner as homepage but with transulent div and inputs and button 
+
+bar that progresses when scrolling down page */

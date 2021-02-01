@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Triva Game</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h4 id="question"></h4>
+      <div style="visibility: hidden" id="grid">
+        <button
+          onclick="localStorage.setItem(this.innerHTML, 1); correct()"
+          id="button1"
+          class="answer"
+        ></button>
+        <button
+          onclick="localStorage.setItem(this.innerHTML, 1); correct()"
+          id="button2"
+          class="answer"
+        ></button>
+        <button
+          onclick="localStorage.setItem(this.innerHTML, 1); correct()"
+          id="button3"
+          class="answer"
+        ></button>
+        <button
+          onclick="localStorage.setItem(this.innerHTML, 1); correct()"
+          id="button4"
+          class="answer"
+        ></button>
+      </div>
+      <div id="start_next">
+        <button onclick="start()" id="startbutton">Start Game</button>
+      </div>
+    </div>
+    <script src="./script.js" async defer></script>
+  </body>
+</html>

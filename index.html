@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Retro Gaming</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div style="display: none" id="sidebar">
+      <button onclick="sb_close()">Close &times;</button>
+      <h3>categories</h3>
+      <br />
+      <a href="#">Action</a>
+      <a href="#">strategy</a>
+      <a href="#">shoot em up</a>
+    </div>
+    <div class="banner">
+      <button onclick="sb_open()" id="sb_button">☰</button>
+      <img src="./images/dreamstime_xxl_103956459_gaming-resized.jpg" alt="" />
+      <div id="bannerinfo">
+        <h1>Experience Retro Gaming</h1>
+        <h3>Login to gain access</h3>
+        <button onclick="">Get started</button>
+      </div>
+    </div>
+    <main>
+      <div class="main">
+        <div id="topgames">
+          <h2>-Top Games-</h2>
+          <img src="./images/tic tac toe.jpg" alt="" />
+          <a href="./triva game/index.html"
+            ><img src="./images/trvia game.jpg" alt=""
+          /></a>
+        </div>
+        <div id="divider"></div>
+        <div id="games">
+          <h2>-Trending Games-</h2>
+          <img src="./images/pacman.PNG" alt="" />
+          <img src="./images/tetris.JPG" alt="" />
+          <img src="./images/mario3.JPG" alt="" />
+          <img src="./images/pinball.JPG" alt="" />
+          <img src="./images/pong.JPG" alt="" />
+          <img src="./images/sonic2.JPG" alt="" />
+          <img src="./images/space invader.JPG" alt="" />
+          <img src="./images/stight fighter.JPG" alt="" />
+          <img src="./images/frogger.JPG" alt="" />
+          <img src="./images/asteriods.JPG" alt="" />
+          <img src="./images/mario kart.JPG" alt="" />
+          <img src="./images/buble  buble.JPG" alt="" />
+        </div>
+      </div>
+      <a href="#"><img src="./images/game over.JPG" alt="" id="game_over" /></a>
+    </main>
+    <footer>
+      <p>more games to come!!</p>
+      <br />
+      <table>
+        <tr>
+          <h4>contact us</h4>
+        </tr>
+        <tr>
+          <h4>terms and conditions</h4>
+        </tr>
+        <tr>
+          <h4>contact us</h4>
+        </tr>
+        <tr>
+          <h4>purplebeard &copy 2021</h4>
+        </tr>
+      </table>
+    </footer>
+    <script src="./script.js" async defer></script>
+    <script>
+      function sb_open() {
+        document.getElementById("sidebar").style.display = "block";
+      }
+      function sb_close() {
+        document.getElementById("sidebar").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
